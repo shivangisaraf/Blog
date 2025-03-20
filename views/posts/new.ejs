@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+</head>
+<body>
+  <h3>Create a new Post</h3>
+  <form action="/posts" method="post" type="text">
+    <input name="post[name]" placeholder="Name" type="text">
+    <input name="post[title]" placeholder="Enter Title" type="text">
+    <textarea name="post[description]" placeholder="Enter Description" type="text"></textarea>
+    <input name="post[image]" placeholder="Enter image URL" type="text">
+    <button>Add</button>
+  </form>
+
+</body>
+</html>

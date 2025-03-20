@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+</head>
+<body>
+  <h3>Edit your Post</h3>
+  <form action="/posts/<%= post._id %>?_method=PUT" method="post" type="text">
+    <input name="post[name]" value="<%= post.name %>" type="text">
+    <input name="post[title]" value="<%= post.title %>" type="text">
+    <textarea name="post[description]" type="text"><%= post.description %></textarea>
+    <input name="post[image]" value="<%= post.image %>" type="text">
+    <button>Edit</button>
+  </form>
+
+</body>
+</html>
